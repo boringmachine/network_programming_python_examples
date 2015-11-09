@@ -56,7 +56,6 @@ def dir_bruter(word_queue, extensions=None):
                     headers["User-Agent"] = user_agent
                     r = urllib2.Request(url,headers=headers)
 
-
                     response = urllib2.urlopen(r)
 
                     if len(response.read()):
